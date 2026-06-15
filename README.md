@@ -1,6 +1,6 @@
 # IT Projects
 
-This repo is my main index for hands-on IT, system administration, cloud, virtualization, and Python projects. I use it as a quick place to show what I have built and what each project was meant to practice.
+This repo is my main index for hands-on IT, system administration, cloud, virtualization, Python, and full-stack web projects. I use it as a quick place to show what I have built and what each project was meant to practice.
 
 ## Featured System Administration Work
 
@@ -30,14 +30,14 @@ This repo is my main index for hands-on IT, system administration, cloud, virtua
 | --- | --- | --- |
 | Ubuntu Virtual Machine Setup | Installing and configuring an Ubuntu VM in VirtualBox | [JBN77/Virtual-Machines](https://github.com/JBN77/Virtual-Machines) |
 
-## Full-Stack, Python, and Web Apps
+## Application Development Portfolio
 
-| Project | What it covers | Link |
-| --- | --- | --- |
-| AeroNova Airline Platform | Full-stack React, Express, PostgreSQL, Prisma, TypeScript airline booking MVP with media-rich UI, booking flow, seat selection, API, seed data, and screenshots | [Open project](https://github.com/JBN77/IT-Projects/tree/main/aeronova) |
-| Energy Bill Calculator | Python calculator for estimating energy usage and cost | [JBN77/Energy-Bill-Calculator-with-python](https://github.com/JBN77/Energy-Bill-Calculator-with-python) |
-| Task Tracker App | Flask app for creating and tracking tasks with JSON storage | [JBN77/Task-Tracker-App](https://github.com/JBN77/Task-Tracker-App) |
-| QR Code Generator | Flask app that generates downloadable QR codes from text or URLs | [JBN77/QR-Code-Generator](https://github.com/JBN77/QR-Code-Generator) |
+| Project | Category | Stack and skills demonstrated | Link |
+| --- | --- | --- | --- |
+| AeroNova Airline Platform | Full-stack web platform | React, TypeScript, Tailwind CSS, Express, PostgreSQL, and Prisma. Includes flight search, booking flow, seat selection, API routes, seed data, media assets, and README screenshots. | [Open project](https://github.com/JBN77/IT-Projects/tree/main/aeronova) |
+| Task Tracker App | Web application | Python and Flask CRUD app with form handling, backend routing, and persistent JSON storage. | [JBN77/Task-Tracker-App](https://github.com/JBN77/Task-Tracker-App) |
+| QR Code Generator | Web utility | Python and Flask app for processing user-submitted text or URLs into downloadable QR codes. | [JBN77/QR-Code-Generator](https://github.com/JBN77/QR-Code-Generator) |
+| Energy Bill Calculator | Python utility | Command-line Python calculator for estimating energy usage and cost. | [JBN77/Energy-Bill-Calculator-with-python](https://github.com/JBN77/Energy-Bill-Calculator-with-python) |
 
 ## Current Focus
 
