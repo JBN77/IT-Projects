@@ -34,7 +34,7 @@ This repo is my main index for hands-on IT, system administration, cloud, virtua
 
 | Project | Category | Stack and skills demonstrated | Link |
 | --- | --- | --- | --- |
-| AeroNova Airline Platform | Full-stack web platform | React, TypeScript, Tailwind CSS, Express, PostgreSQL, and Prisma. Includes flight search, booking flow, seat selection, API routes, seed data, media assets, and README screenshots. | [Open project](https://github.com/JBN77/IT-Projects/tree/main/aeronova) |
+| AeroNova Airline Platform | Full-stack web platform | React, TypeScript, Tailwind CSS, Express, PostgreSQL, and Prisma. Includes flight search, booking flow, seat selection, API routes, seed data, media assets, and README screenshots. | [JBN77/AeroNova](https://github.com/JBN77/AeroNova) |
 | Task Tracker App | Web application | Python and Flask CRUD app with form handling, backend routing, and persistent JSON storage. | [JBN77/Task-Tracker-App](https://github.com/JBN77/Task-Tracker-App) |
 | QR Code Generator | Web utility | Python and Flask app for processing user-submitted text or URLs into downloadable QR codes. | [JBN77/QR-Code-Generator](https://github.com/JBN77/QR-Code-Generator) |
 | Energy Bill Calculator | Python utility | Command-line Python calculator for estimating energy usage and cost. | [JBN77/Energy-Bill-Calculator-with-python](https://github.com/JBN77/Energy-Bill-Calculator-with-python) |
