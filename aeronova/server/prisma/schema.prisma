@@ -1,0 +1,124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CabinClass {
+  ECONOMY
+  PREMIUM
+  BUSINESS
+  FIRST
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+enum PassengerType {
+  ADULT
+  CHILD
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  bookings     Booking[]
+}
+
+model Airport {
+  id         String   @id @default(cuid())
+  code       String   @unique
+  name       String
+  city       String
+  country    String
+  timezone   String
+  departures Flight[] @relation("FlightOrigin")
+  arrivals   Flight[] @relation("FlightDestination")
+}
+
+model Flight {
+  id              String    @id @default(cuid())
+  flightNumber    String    @unique
+  originId        String
+  destinationId   String
+  departureTime   DateTime
+  arrivalTime     DateTime
+  durationMinutes Int
+  aircraft        String
+  cabin           CabinClass @default(ECONOMY)
+  baseFare        Decimal   @db.Decimal(10, 2)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  origin          Airport   @relation("FlightOrigin", fields: [originId], references: [id])
+  destination     Airport   @relation("FlightDestination", fields: [destinationId], references: [id])
+  seats           Seat[]
+  bookings        Booking[]
+
+  @@index([originId, destinationId, departureTime])
+}
+
+model Seat {
+  id            String        @id @default(cuid())
+  flightId      String
+  seatNumber    String
+  cabin         CabinClass
+  isAvailable   Boolean       @default(true)
+  isHeld        Boolean       @default(false)
+  priceModifier Decimal       @default(0) @db.Decimal(10, 2)
+  flight        Flight        @relation(fields: [flightId], references: [id], onDelete: Cascade)
+  bookingSeats  BookingSeat[]
+
+  @@unique([flightId, seatNumber])
+  @@index([flightId])
+}
+
+model Booking {
+  id               String        @id @default(cuid())
+  userId           String?
+  flightId         String
+  status           BookingStatus @default(PENDING)
+  totalPrice       Decimal       @db.Decimal(10, 2)
+  confirmationCode String        @unique
+  contactEmail     String
+  contactPhone     String?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  user             User?         @relation(fields: [userId], references: [id])
+  flight           Flight        @relation(fields: [flightId], references: [id])
+  passengers       Passenger[]
+  bookingSeats     BookingSeat[]
+
+  @@index([flightId])
+  @@index([userId])
+}
+
+model Passenger {
+  id        String        @id @default(cuid())
+  bookingId String
+  firstName String
+  lastName  String
+  type      PassengerType @default(ADULT)
+  booking   Booking       @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+}
+
+model BookingSeat {
+  id        String  @id @default(cuid())
+  bookingId String
+  seatId    String
+  booking   Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  seat      Seat    @relation(fields: [seatId], references: [id])
+
+  @@unique([bookingId, seatId])
+  @@index([seatId])
+}

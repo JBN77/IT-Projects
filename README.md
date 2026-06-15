@@ -30,10 +30,11 @@ This repo is my main index for hands-on IT, system administration, cloud, virtua
 | --- | --- | --- |
 | Ubuntu Virtual Machine Setup | Installing and configuring an Ubuntu VM in VirtualBox | [JBN77/Virtual-Machines](https://github.com/JBN77/Virtual-Machines) |
 
-## Python and Web Apps
+## Full-Stack, Python, and Web Apps
 
 | Project | What it covers | Link |
 | --- | --- | --- |
+| AeroNova Airline Platform | Full-stack React, Express, PostgreSQL, Prisma, TypeScript airline booking MVP with media-rich UI, booking flow, seat selection, API, seed data, and screenshots | [Open project](https://github.com/JBN77/IT-Projects/tree/main/aeronova) |
 | Energy Bill Calculator | Python calculator for estimating energy usage and cost | [JBN77/Energy-Bill-Calculator-with-python](https://github.com/JBN77/Energy-Bill-Calculator-with-python) |
 | Task Tracker App | Flask app for creating and tracking tasks with JSON storage | [JBN77/Task-Tracker-App](https://github.com/JBN77/Task-Tracker-App) |
 | QR Code Generator | Flask app that generates downloadable QR codes from text or URLs | [JBN77/QR-Code-Generator](https://github.com/JBN77/QR-Code-Generator) |
