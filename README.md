@@ -1,44 +1,34 @@
 # IT Projects
 
-This repo is my main index for hands-on IT, system administration, cloud, virtualization, Python, and full-stack web projects. I use it as a quick place to show what I have built and what each project was meant to practice.
+This repo is an index of my public projects. The infrastructure labs are the main focus; the Python and web apps are smaller builds I used to practice programming and deployment basics.
 
-## Featured System Administration Work
+## Start Here
 
-| Project | What I practiced | Link |
-| --- | --- | --- |
-| Active Directory Lab and Sysadmin Portfolio | Windows Server, AD DS, DNS, DHCP, PowerShell user creation, documentation with screenshots | [Open repo](https://github.com/JBN77/active-directory-lab) |
-| Windows Endpoint Hardening Baseline | Group Policy planning, Defender/firewall checks, local admin review, security baseline auditing | [Open project](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/windows-endpoint-hardening-baseline) |
-| Infrastructure Monitoring and Incident Response | PowerShell monitoring, service checks, event log review, dashboard output, incident response notes | [Open project](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/infrastructure-monitoring-response) |
-| Backup and Disaster Recovery Plan | Backup inventory, restore planning, RPO/RTO thinking, PowerShell readiness checks | [Open project](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/backup-and-disaster-recovery) |
+- **[Active Directory Home Lab](https://github.com/JBN77/active-directory-lab)**
 
-## Active Directory and Windows Administration
+  Windows Server, AD DS, DNS, DHCP, a Windows 11 client, PowerShell user creation, and screenshots of the checks that passed.
 
-| Project | What it covers | Link |
-| --- | --- | --- |
-| Active Directory Lab and Sysadmin Portfolio | My newer AD lab write-up with screenshots, automation, and related sysadmin projects | [JBN77/active-directory-lab](https://github.com/JBN77/active-directory-lab) |
-| Active Directory Home Lab | Earlier Active Directory lab documentation and Windows administration practice | [JBN77/Active-Directory-Home-Lab](https://github.com/JBN77/Active-Directory-Home-Lab) |
+- **[Azure VM Networking Lab](https://github.com/JBN77/Microsoft-Azure-VM-NSG-Setup)**
 
-## Cloud and Networking
+  Azure VM deployment, virtual networking, NSG rule choices, remote-access testing, and Wireshark notes.
 
-| Project | What it covers | Link |
-| --- | --- | --- |
-| Microsoft Azure VM, NSG, and Packet Analysis | Azure virtual machines, Network Security Groups, remote access, Wireshark packet review | [JBN77/Microsoft-Azure-VM-NSG-Setup](https://github.com/JBN77/Microsoft-Azure-VM-NSG-Setup) |
+## Windows Administration Practice
 
-## Virtualization
+These exercises live inside the Active Directory repo:
 
-| Project | What it covers | Link |
-| --- | --- | --- |
-| Ubuntu Virtual Machine Setup | Installing and configuring an Ubuntu VM in VirtualBox | [JBN77/Virtual-Machines](https://github.com/JBN77/Virtual-Machines) |
+- [Windows workstation baseline check](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/windows-endpoint-hardening-baseline) - read-only PowerShell checks for firewall, Defender, RDP, local admins, and logging.
+- [Basic Windows health check](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/infrastructure-monitoring-response) - ping, uptime, disk, service, and event log collection with JSON and HTML output.
+- [Backup readiness check](https://github.com/JBN77/active-directory-lab/tree/main/portfolio-projects/backup-and-disaster-recovery) - inventory-based path and file-age checks plus a recovery runbook.
 
-## Application Development Portfolio
+I also keep an [older Active Directory write-up](https://github.com/JBN77/Active-Directory-Home-Lab). The newer lab above has the fuller evidence and scripts.
 
-| Project | Category | Stack and skills demonstrated | Link |
-| --- | --- | --- | --- |
-| AeroNova Airline Platform | Full-stack web platform | React, TypeScript, Tailwind CSS, Express, PostgreSQL, and Prisma. Includes flight search, booking flow, seat selection, API routes, seed data, media assets, and README screenshots. | [JBN77/AeroNova](https://github.com/JBN77/AeroNova) |
-| Task Tracker App | Web application | Python and Flask CRUD app with form handling, backend routing, and persistent JSON storage. | [JBN77/Task-Tracker-App](https://github.com/JBN77/Task-Tracker-App) |
-| QR Code Generator | Web utility | Python and Flask app for processing user-submitted text or URLs into downloadable QR codes. | [JBN77/QR-Code-Generator](https://github.com/JBN77/QR-Code-Generator) |
-| Energy Bill Calculator | Python utility | Command-line Python calculator for estimating energy usage and cost. | [JBN77/Energy-Bill-Calculator-with-python](https://github.com/JBN77/Energy-Bill-Calculator-with-python) |
+## Cloud and Virtualization
 
-## Current Focus
+- **[Ubuntu Virtual Machine Setup](https://github.com/JBN77/Virtual-Machines)** - notes for installing Ubuntu in VirtualBox.
 
-Right now I am focusing on system administration fundamentals: Windows Server, Active Directory, networking, endpoint security, monitoring, backup planning, and PowerShell automation.
+## Applications
+
+- **[AeroNova](https://github.com/JBN77/AeroNova)** - full-stack airline booking project built with React, TypeScript, Express, PostgreSQL, and Prisma.
+- **[Task Tracker](https://github.com/JBN77/Task-Tracker-App)** - small Flask CRUD app with JSON storage.
+- **[QR Code Generator](https://github.com/JBN77/QR-Code-Generator)** - Flask utility that returns downloadable QR codes.
+- **[Energy Bill Calculator](https://github.com/JBN77/Energy-Bill-Calculator-with-python)** - Python command-line calculator for estimated energy use and cost.
